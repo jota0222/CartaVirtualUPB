@@ -1,7 +1,9 @@
 package upb.cartavirtual;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 public class pEntradas extends AppCompatActivity {
 
@@ -9,5 +11,10 @@ public class pEntradas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_p_entradas);
+
     }
+
+
+
+
 }

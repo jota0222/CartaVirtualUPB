@@ -20,7 +20,11 @@ public class pInicio extends AppCompatActivity {
 
     }
 
+    public void AbrirRegistro(View v){
 
+        Intent i = new Intent(this, pRegistro.class);
+        startActivity(i);
+    }
 
 
 }

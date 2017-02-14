@@ -1,5 +1,6 @@
 package upb.cartavirtual;
 
+
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -39,8 +40,25 @@ public class pMapa extends FragmentActivity implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng laureles = new LatLng(6.246126, -75.589290);
+        mMap.addMarker(new MarkerOptions().position(laureles).title("S&B-Laureles"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(laureles));
+
+
+        LatLng poblado = new LatLng(6.196697,-75.573682);
+        mMap.addMarker(new MarkerOptions().position(poblado).title("S&B-Poblado"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(poblado));
+
+
+        LatLng belen = new LatLng(6.233117,-75.604831);
+        mMap.addMarker(new MarkerOptions().position(belen).title("S&B-Belén"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(belen));
+
+
+        LatLng bello = new LatLng(6.334700,-75.558644);
+        mMap.addMarker(new MarkerOptions().position(bello).title("S&B-Bello"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(bello));
+        mMap.setMinZoomPreference(11);
+
     }
 }

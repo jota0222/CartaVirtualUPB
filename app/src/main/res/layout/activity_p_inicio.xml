@@ -73,6 +73,7 @@
         android:layout_width="70dp"
         app:srcCompat="@drawable/suma"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imgILogo" />
+        android:layout_alignStart="@+id/imgILogo"
+        android:onClick="AbrirRegistro" />
 
 </RelativeLayout>

@@ -86,7 +86,8 @@
         android:background="@color/Fondoboton"
         android:layout_below="@+id/txtMentrada"
         android:layout_alignStart="@+id/txtMentrada"
-        android:layout_marginTop="13dp" />
+        android:layout_marginTop="13dp"
+        android:onClick="AbrirEntrada" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -97,7 +98,8 @@
         android:background="@color/Fondoboton"
         android:layout_alignTop="@+id/imgBtnMentrada"
         android:layout_alignStart="@+id/txtMppal"
-        android:layout_marginStart="34dp" />
+        android:layout_marginStart="34dp"
+        android:onClick="AbrirPlatoPrincipal" />
 
     <TextView
         android:text="Bebidas"
@@ -121,7 +123,8 @@
         android:background="@color/Fondoboton"
         android:layout_marginTop="14dp"
         android:layout_below="@+id/txtMpostre"
-        android:layout_alignStart="@+id/txtMpostre" />
+        android:layout_alignStart="@+id/txtMpostre"
+        android:onClick="AbrirPostre" />
 
     <ImageButton
         android:layout_width="100dp"
@@ -131,5 +134,6 @@
         android:background="@color/Fondoboton"
         android:scaleType="centerCrop"
         android:layout_alignTop="@+id/imgBtnMpostre"
-        android:layout_alignStart="@+id/imgBtnMppal" />
+        android:layout_alignStart="@+id/imgBtnMppal"
+        android:onClick="AbrirBebida" />
 </RelativeLayout>
