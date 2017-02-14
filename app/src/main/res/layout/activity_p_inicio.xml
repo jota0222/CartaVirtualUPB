@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_p_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="upb.cartavirtual.pInicio"
+    android:background="@color/fondoinicio">
+
+    <ImageView
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imgILogo"
+        android:layout_width="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="INGRESAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnIIngresar"
+        android:background="@color/btningresar"
+        android:textStyle="normal|bold"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/rojo"
+        android:layout_below="@+id/btnISedes"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="SEDES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/btnISedes"
+        android:textSize="40sp"
+        android:background="@color/btnsedes"
+        android:textStyle="normal|bold"
+        android:textColor="@color/rojo"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:elevation="0dp"
+        android:layout_below="@+id/imgILogo"
+        android:layout_centerHorizontal="true"
+        android:onClick="AbrirSede" />
+
+    <TextView
+        android:text="Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIRegistro"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:fontFamily="casual"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imgIBtnLogin"
+        android:layout_marginStart="10dp" />
+
+    <ImageButton
+        android:id="@+id/imgIBtnLogin"
+        android:scaleType="centerInside"
+        android:background="@color/btningresar"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        app:srcCompat="@drawable/suma"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgILogo" />
+
+</RelativeLayout>

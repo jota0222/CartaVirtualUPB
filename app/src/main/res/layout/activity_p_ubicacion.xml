@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_p_ubicacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="upb.cartavirtual.pUbicacion"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUubicacion"
+        android:textColor="@android:color/black"
+        android:fontFamily="casual"
+        android:textSize="38sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="laureles"
+        android:textAllCaps="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/laureles"
+        android:id="@+id/imageView"
+        android:layout_height="200dp"
+        android:layout_width="500dp"
+        android:layout_below="@+id/txtUubicacion"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imageView2"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@android:color/black"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:text="Spaghetti y Blues"
+        android:layout_width="150dp"
+        android:layout_marginStart="33dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_height="100dp" />
+
+</RelativeLayout>
